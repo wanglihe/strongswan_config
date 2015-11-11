@@ -1,0 +1,4 @@
+#!/bin/bash
+modprobe -rv iptable_nat
+sysctl -w net.ipv4.ip_forward=1
+nft -f nat.conf
