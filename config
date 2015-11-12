@@ -4,3 +4,4 @@ cp ipsec.conf /etc/
 cp ipsec.secrets /etc/
 cp charon.conf /etc/strongswan.d/
 chmod 0600 /etc/ipsec.secrets
+systemctl reload strongswan
