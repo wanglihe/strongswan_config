@@ -16,13 +16,15 @@ run the script "network", it will open ipv4 forwarding and nat
 
 # configure usernames and password
 
-edit ipsec.secrets, add lines like this  username: XAUTH "xxxx", this is username and password, and
+edit ipsec.secrets, add lines like this  username: XAUTH "xxxx", this is username and password.
 change xxx in the line : PSK "xxx" to some word, this is the preshared key, don't delete the doulbe quote.
 
 edit ipsec.conf, change rightsubnet and rightsourceip to something you like, it is the subnet for your client.
 
-run the script "config" with arg of your server ip address.
-example: ./config 10.2.3.4
+look at /etc/resolv.conf, find out one DNS server, edit charon.conf here, put DNS in dns1, like this: dns1 = 8.8.8.8.
+If you want another, use dns2 like this dns2 = 8.8.4.4.
+
+run the script "config".
 
 # about service
 The service can be modified by these commands:
