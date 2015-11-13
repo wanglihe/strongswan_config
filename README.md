@@ -33,10 +33,15 @@ run the script "config".
 
 # about service
 The service can be modified by these commands:
+
 try the command "systemctl start strongswan", start service.
+
 try the command "systemctl stop strongswan", start service.
+
 try the command "systemctl status strongswan", see status.
+
 try the command "systemctl enable strongswan", make it auto start since next boot.
+
 try the command "systemctl disable strongswan", make it not start since next boot.
 
 
