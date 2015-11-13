@@ -1,10 +1,15 @@
 # strongswan_config
-configure a strongswan ipsec subnet with nftable and linux 4.x on debian jessie
+Configure a strongswan ipsec subnet with nftable and linux 4.x on debian jessie. This configure only open ikev1 with IPv4,
+if you want ikev2, l2tp over IPSec, IPSec with RSA, or you want IPv6, try other guide. I have tested these scripts, IOS 9.0 using IPSec, android  using IPSec Xauth PSK,
+Mac OS 10.x using IPSec. Any suggestions is welcome.
 
 # before install
 check your system installed nftables and linux-image-4.x.x, these packages from jessie-backports,
 and notice that this script will disable kernel module iptable_nat, because nftables can't work with iptable_nat.
 Just type "./xxx", you can run the script xxx.
+
+I have submit bug about nftables for it's terrible startup scripts (https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=804648), I will move nftables installation
+into script "install" somedays later.
 
 # install
 
