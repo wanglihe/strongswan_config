@@ -36,7 +36,7 @@ The service can be modified by these commands:
 
 try the command "systemctl start strongswan", start service.
 
-try the command "systemctl stop strongswan", start service.
+try the command "systemctl stop strongswan", stop service.
 
 try the command "systemctl status strongswan", see status.
 
