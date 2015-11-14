@@ -8,8 +8,8 @@ check your system installed nftables and linux-image-4.x.x, these packages from 
 and notice that this script will disable kernel module iptable_nat, because nftables can't work with iptable_nat.
 Just type "./xxx", you can run the script xxx.
 
-I have submit bug about nftables for it's terrible startup scripts (https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=804648), I will move nftables installation
-into script "install" somedays later.
+I have submit a bug about nftables for it's terrible startup scripts (https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=804648), I will move nftables installation
+into script "install" somedays later, after bug fixed.
 
 # install
 
@@ -43,6 +43,11 @@ try the command "systemctl status strongswan", see status.
 try the command "systemctl enable strongswan", make it auto start since next boot.
 
 try the command "systemctl disable strongswan", make it not start since next boot.
+
+# run all script
+
+You can run all script in another way, edit all configure file, and then run command "setup_all", this script put
+"install, network, config" together.
 
 
 # things to notice
