@@ -19,7 +19,7 @@ run the script "install", it will install strongswan.
 
 run the script "network", it will open ipv4 forwarding and nat
 
-# configure usernames and password
+# configure subnet, usernames and password
 
 edit ipsec.secrets, add lines like this  username: XAUTH "xxxx", this is username and password.
 change xxx in the line : PSK "xxx" to some word, this is the preshared key, don't delete the doulbe quote.
